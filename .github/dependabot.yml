@@ -1,6 +1,7 @@
+# Dependabot config docs: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: "nuget"  
+    directory: "/code/"   # location of package manifests
     schedule:
-      interval: "monthly"
+      interval: "daily"
